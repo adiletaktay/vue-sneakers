@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <div class="flex items-center border border-slate-200 p-4 rounded-xl gap-4">
-    <img class="w-16 h-16" :src="imageUrl" :alt="title" />
+    <img class="w-16 h-16" :src="imageUrl" :alt="title" loading="lazy" />
     <div class="flex flex-col flex-1">
       <p>{{ title }}</p>
 
@@ -22,6 +22,7 @@ defineProps({
           class="opacity-40 hover:opacity-100 cursor-pointer transition"
           src="/close.svg"
           alt="close"
+          loading="lazy"
         />
       </div>
     </div>

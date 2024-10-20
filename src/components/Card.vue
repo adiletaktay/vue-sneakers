@@ -21,8 +21,9 @@ defineProps({
       alt="Like 1"
       class="absolute top-8 left-8"
       @click="onClickFavorite"
+      loading="lazy"
     />
-    <img :src="imageUrl" alt="Sneaker" />
+    <img :src="imageUrl" alt="Sneaker" loading="lazy" />
     <p class="mt-2">{{ title }}</p>
 
     <div class="flex justify-between mt-5">
@@ -36,6 +37,7 @@ defineProps({
         @click="onClickAdd"
         :src="!isAdded ? '/plus.svg' : '/checked.svg'"
         alt="Plus"
+        loading="lazy"
       />
     </div>
   </div>
